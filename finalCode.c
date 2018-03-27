@@ -11,11 +11,11 @@ int a;
 
 void driver() {
 	if (vexRT[Btn7U]) {
-			a = -1;
+		a = -1;
 	}
 
 	else if (vexRT[Btn7D]) {
-			a = 1;
+		a = 1;
 	}
 
 	motor[rightDrive] = a * vexRT[Ch2];
@@ -24,7 +24,7 @@ void driver() {
 	if (vexRT[Btn5D]) {
 		motor[rightMogo] = 100;
 		motor[leftMogo] = 100;
-		}
+	}
 
 	else if (vexRT[Btn6D]) {
 		motor[rightMogo] = -100;
@@ -60,7 +60,7 @@ void auton() {
 }
 task main()
 {
-	while(1 == 1) {
- 		driver();
+while(1 == 1) {
+	driver();
 }
 }
