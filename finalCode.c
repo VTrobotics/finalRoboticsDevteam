@@ -50,15 +50,8 @@ void driver() {
 		motor[rightLift] = 0;
 		motor[leftLift] = 0;
 	}
-	if (vexRT[Btn8U]) {
-		motor[claw] = 90;
-	}
-	else if (vexRT[Btn8D]) {
-		motor[claw] = -90;
-	}
-	else {
-		motor[claw] = 0;
-	}
+
+
 }
 
 void auton() {
