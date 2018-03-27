@@ -51,6 +51,19 @@ void driver() {
 		motor[leftLift] = 0;
 	}
 
+	if (vexRT[btn8U]) {
+		motor[claw] = 90;
+
+	}
+	else if (vexRT[btn8D]) {
+		motor[claw] = -90;
+
+	}
+
+	else {
+		motor[claw] = 0;
+	}
+
 
 }
 
